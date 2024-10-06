@@ -1,0 +1,206 @@
+body {
+    font-family: Exo-2, monospace;
+    background-color: #ff93d2; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(61, 0, 85);
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 90px;
+    margin-top: 0px;
+}
+
+#nosotros {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#productos {
+    background-color: #ff93d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contacto {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+
+
+#luna {
+    background-color: #ff86cd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+/* Estilo de cuadro de productos */
+
+article {
+
+display: flex;  
+width: 600px;
+height: 430px; 
+padding: 0%;
+
+}
+article img{
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .8;
+transition: .5s ease;
+}
+article img:hover{
+cursor: crosshair;
+width: 300px;
+opacity: 1;
+filter: contrast(120%);
+}
+
+
+/* Estilo del contenido de la sección Nosotros */
+.nosotros-content {
+    width: 40%;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilo de la imagen en la sección Nosotros */
+.nosotros-image {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    text-align: center;
+}
+
+.nosotros-image img {
+    width:50%;
+    border-radius: 200px;
+    box-shadow: 0px 16px 19px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del contenido de lal texto de productos*/
+.productos-content {
+    width: 40%;
+    font-size: 25px;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.luna-content {
+    margin-left: 50px;
+    width: 40%;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilo del texto de la sección Contáctenos */
+#contacto {
+    display: flex;
+    justify-content: center; /* Para centrar el contenido */
+    align-items: center; 
+    padding: 20px;
+    gap: 20px;
+    position: relative; /* Necesario para el video de fondo */
+    z-index: 1; /* Asegurarse de que el contenido esté sobre el video */
+    font-size: 1.5em; /* Aumentar el tamaño de la letra */
+}
+
+/* Video de fondo para la sección de contáctenos */
+#contacto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegurarse de que el video esté detrás del contenido */
+    background: rgba(0, 0, 0, 0.5); /* Oscurecer el video para que el texto sea más visible */
+}
+
+#contacto video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegurar que el video cubra toda la sección */
+    z-index: -2;
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Hacer el fondo del formulario semi-transparente */
+    border-radius: 8px;
+    margin-left: auto;
+    font-size: 1.2em; /* Tamaño de letra consistente */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Mantener la misma fuente */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Mantener la misma fuente */
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c248ad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Mantener la misma fuente */
+}
+
+.contact-form button:hover {
+    background-color: #852675;
+}
